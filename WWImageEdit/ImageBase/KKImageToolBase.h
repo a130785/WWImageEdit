@@ -14,8 +14,14 @@
 #import "KKImageEditorTheme.h"
 
 static const CGFloat kImageToolAnimationDuration = 0.3; //工具栏平移动画时间
-//static const CGFloat kImageToolFadeoutDuration   = 0.2; //工具栏淡出时间
 
+typedef NS_ENUM(NSUInteger,KKToolIndexNumber){
+    KKToolIndexNumberFirst = 0,
+    KKToolIndexNumberSecond = 1,
+    KKToolIndexNumberThird = 2,
+    KKToolIndexNumberFourth = 3,
+    KKToolIndexNumberFifth = 4,
+};
 
 /**
  图片工具类 基类
@@ -27,8 +33,20 @@ static const CGFloat kImageToolAnimationDuration = 0.3; //工具栏平移动画�
 
 - (id)initWithImageEditor:(KKImageEditorViewController*)editor withToolInfo:(KKImageToolInfo *)info;
 
+/**
+ 初始化工具信息
+ */
 - (void)setup;
+
+
+/**
+ 取消修改
+ */
 - (void)cleanup;
+
+/**
+ 保存修改
+ */
 - (void)executeWithCompletionBlock:(void(^)(UIImage *image, NSError *error, NSDictionary *userInfo))completionBlock;
 
 

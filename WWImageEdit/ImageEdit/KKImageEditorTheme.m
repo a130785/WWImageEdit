@@ -12,7 +12,7 @@
 
 static KKImageEditorTheme *_sharedInstance = nil;
 
-+ (KKImageEditorTheme*)theme
++ (instancetype)theme
 {
     static dispatch_once_t  onceToken;
     dispatch_once(&onceToken, ^{

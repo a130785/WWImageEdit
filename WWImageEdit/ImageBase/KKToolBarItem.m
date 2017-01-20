@@ -11,7 +11,7 @@
 
 @implementation KKToolBarItem
 
-- (id)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -33,7 +33,7 @@
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame target:(id)target action:(SEL)action toolInfo:(KKImageToolInfo*)toolInfo
+- (instancetype)initWithFrame:(CGRect)frame target:(id)target action:(SEL)action toolInfo:(KKImageToolInfo*)toolInfo
 {
     self = [self initWithFrame:frame];
     if(self){

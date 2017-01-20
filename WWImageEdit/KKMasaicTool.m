@@ -11,10 +11,8 @@
 
 @implementation KKMasaicTool{
 
-    KKMasaicView *masaicView;
-    UIView *_menuView;
-    CGSize _originalImageSize;
-    UIImageView *_drawingView;
+    KKMasaicView *masaicView; //显示马赛克
+    UIView *_menuView; //底部菜单
 }
 
 
@@ -29,25 +27,20 @@
 }
 
 + (NSUInteger)orderNum{
-    return 1;
+    return KKToolIndexNumberSecond;
 }
 
 #pragma mark- implementation
 
-- (void)setup
-{
-    _originalImageSize = self.editor.imageView.image.size;
-    _drawingView = [[UIImageView alloc] initWithFrame:self.editor.imageView.bounds];
-    
+- (void)setup{
     CIImage *ciImage = [[CIImage alloc] initWithImage:self.editor.imageView.image];
-    
+    //生成马赛克
     CIFilter *filter = [CIFilter filterWithName:@"CIPixellate"];
     [filter setValue:ciImage  forKey:kCIInputImageKey];
     [filter setDefaults];
     CIImage *outImage = [filter valueForKey:kCIOutputImageKey];
     CIContext *context = [CIContext contextWithOptions:nil];
     CGImageRef cgImage = [context createCGImage:outImage fromRect:[outImage extent]];
-    
     UIImage *showImage = [UIImage imageWithCGImage:cgImage];
     CGImageRelease(cgImage);
     
@@ -117,21 +110,6 @@
 //    [whitebutton addTarget:self action:@selector(createWhiteMasaicImg) forControlEvents:UIControlEventTouchUpInside];
 }
 
-
-//-(UIImage *)createMasaicImg:(NSString *)filterName {
-//
-//    CIImage *ciImage = [[CIImage alloc] initWithImage:self.editor.imageView.image];
-//    
-//    CIFilter *filter = [CIFilter filterWithName:@"CIPixellate"];
-//    [filter setValue:ciImage  forKey:kCIInputImageKey];
-//    [filter setDefaults];
-//    CIImage *outImage = [filter valueForKey:kCIOutputImageKey];
-//    CIContext *context = [CIContext contextWithOptions:nil];
-//    CGImageRef cgImage = [context createCGImage:outImage fromRect:[outImage extent]];
-//    
-//    UIImage *showImage = [UIImage imageWithCGImage:cgImage];
-//    CGImageRelease(cgImage);
-//}
 
 - (UIImage*)buildImage
 {

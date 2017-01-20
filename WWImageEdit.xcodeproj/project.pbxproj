@@ -16,6 +16,13 @@
 		4E2677371E263A3E0039CEFC /* KKMasaicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2677361E263A3E0039CEFC /* KKMasaicView.m */; };
 		4E26773A1E263A650039CEFC /* KKMasaicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2677391E263A650039CEFC /* KKMasaicTool.m */; };
 		4E26773D1E263F5F0039CEFC /* KKClassList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E26773C1E263F5F0039CEFC /* KKClassList.m */; };
+		4E2677481E277B520039CEFC /* KKEmoticonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2677471E277B520039CEFC /* KKEmoticonTool.m */; };
+		4E26774C1E27A4940039CEFC /* KKEmoticonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E26774B1E27A4940039CEFC /* KKEmoticonView.m */; };
+		4E2677521E28CDA70039CEFC /* KKScaleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2677511E28CDA70039CEFC /* KKScaleButton.m */; };
+		4E26777C1E2C797D0039CEFC /* KKCutTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E26777B1E2C797D0039CEFC /* KKCutTool.m */; };
+		4E2677831E2CB0110039CEFC /* KKCutGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2677821E2CB0110039CEFC /* KKCutGridView.m */; };
+		4E2677891E2CBFC30039CEFC /* KKCutGridLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2677881E2CBFC30039CEFC /* KKCutGridLayer.m */; };
+		4E26778B1E2CC1F10039CEFC /* KKCutCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E26778A1E2CC1F10039CEFC /* KKCutCircle.m */; };
 		4E7B7AB21E12766A00143975 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7B7AB11E12766A00143975 /* main.m */; };
 		4E7B7AB51E12766A00143975 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7B7AB41E12766A00143975 /* AppDelegate.m */; };
 		4E7B7AB81E12766A00143975 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7B7AB71E12766A00143975 /* ViewController.m */; };
@@ -23,6 +30,8 @@
 		4E7B7ABD1E12766A00143975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E7B7ABC1E12766A00143975 /* Assets.xcassets */; };
 		4E7B7AC01E12766A00143975 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E7B7ABE1E12766A00143975 /* LaunchScreen.storyboard */; };
 		4E7B7AD41E15058200143975 /* KKImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7B7AD31E15058200143975 /* KKImageEditorViewController.m */; };
+		4E7B9ADA1E2F4DC700DA741A /* KKTextTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7B9AD91E2F4DC700DA741A /* KKTextTool.m */; };
+		4E7B9ADD1E2F5ABD00DA741A /* KKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7B9ADC1E2F5ABD00DA741A /* KKTextView.m */; };
 		4EAA3BFA1E1BA7A9007D9FC5 /* KKImageToolInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAA3BF91E1BA7A9007D9FC5 /* KKImageToolInfo.m */; };
 		C4F4672BAB022CC86DB73F51 /* libPods-WWImageEdit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F6A44A6BABA928BBDB01D1 /* libPods-WWImageEdit.a */; };
 /* End PBXBuildFile section */
@@ -48,6 +57,20 @@
 		4E2677391E263A650039CEFC /* KKMasaicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKMasaicTool.m; sourceTree = "<group>"; };
 		4E26773B1E263F5F0039CEFC /* KKClassList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKClassList.h; path = ImageUtils/KKClassList.h; sourceTree = "<group>"; };
 		4E26773C1E263F5F0039CEFC /* KKClassList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKClassList.m; path = ImageUtils/KKClassList.m; sourceTree = "<group>"; };
+		4E2677461E277B520039CEFC /* KKEmoticonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKEmoticonTool.h; path = ImageTools/KKEmoticonTool.h; sourceTree = "<group>"; };
+		4E2677471E277B520039CEFC /* KKEmoticonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKEmoticonTool.m; path = ImageTools/KKEmoticonTool.m; sourceTree = "<group>"; };
+		4E26774A1E27A4940039CEFC /* KKEmoticonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKEmoticonView.h; path = ImageTools/KKEmoticonView.h; sourceTree = "<group>"; };
+		4E26774B1E27A4940039CEFC /* KKEmoticonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKEmoticonView.m; path = ImageTools/KKEmoticonView.m; sourceTree = "<group>"; };
+		4E2677501E28CDA70039CEFC /* KKScaleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKScaleButton.h; path = ImageUtils/KKScaleButton.h; sourceTree = "<group>"; };
+		4E2677511E28CDA70039CEFC /* KKScaleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKScaleButton.m; path = ImageUtils/KKScaleButton.m; sourceTree = "<group>"; };
+		4E26777A1E2C797D0039CEFC /* KKCutTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKCutTool.h; path = ImageTools/KKCutTool.h; sourceTree = "<group>"; };
+		4E26777B1E2C797D0039CEFC /* KKCutTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKCutTool.m; path = ImageTools/KKCutTool.m; sourceTree = "<group>"; };
+		4E2677811E2CB0110039CEFC /* KKCutGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKCutGridView.h; path = ImageTools/KKCutGridView.h; sourceTree = "<group>"; };
+		4E2677821E2CB0110039CEFC /* KKCutGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKCutGridView.m; path = ImageTools/KKCutGridView.m; sourceTree = "<group>"; };
+		4E2677841E2CBCDD0039CEFC /* KKCutCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKCutCircle.h; path = ImageTools/KKCutCircle.h; sourceTree = "<group>"; };
+		4E2677871E2CBFC30039CEFC /* KKCutGridLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKCutGridLayer.h; path = ImageTools/KKCutGridLayer.h; sourceTree = "<group>"; };
+		4E2677881E2CBFC30039CEFC /* KKCutGridLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKCutGridLayer.m; path = ImageTools/KKCutGridLayer.m; sourceTree = "<group>"; };
+		4E26778A1E2CC1F10039CEFC /* KKCutCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKCutCircle.m; path = ImageTools/KKCutCircle.m; sourceTree = "<group>"; };
 		4E7B7AAD1E12766A00143975 /* WWImageEdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWImageEdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E7B7AB11E12766A00143975 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4E7B7AB31E12766A00143975 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +83,10 @@
 		4E7B7AC11E12766A00143975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E7B7AD21E15058200143975 /* KKImageEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKImageEditorViewController.h; path = ImageEdit/KKImageEditorViewController.h; sourceTree = "<group>"; };
 		4E7B7AD31E15058200143975 /* KKImageEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKImageEditorViewController.m; path = ImageEdit/KKImageEditorViewController.m; sourceTree = "<group>"; };
+		4E7B9AD81E2F4DC700DA741A /* KKTextTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKTextTool.h; path = ImageTools/KKTextTool.h; sourceTree = "<group>"; };
+		4E7B9AD91E2F4DC700DA741A /* KKTextTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKTextTool.m; path = ImageTools/KKTextTool.m; sourceTree = "<group>"; };
+		4E7B9ADB1E2F5ABD00DA741A /* KKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKTextView.h; path = ImageTools/KKTextView.h; sourceTree = "<group>"; };
+		4E7B9ADC1E2F5ABD00DA741A /* KKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKTextView.m; path = ImageTools/KKTextView.m; sourceTree = "<group>"; };
 		4EAA3BF81E1BA7A9007D9FC5 /* KKImageToolInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKImageToolInfo.h; path = ImageEdit/KKImageToolInfo.h; sourceTree = "<group>"; };
 		4EAA3BF91E1BA7A9007D9FC5 /* KKImageToolInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKImageToolInfo.m; path = ImageEdit/KKImageToolInfo.m; sourceTree = "<group>"; };
 		4EB582ADCC57A8E58C41331D /* Pods-WWImageEdit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWImageEdit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WWImageEdit/Pods-WWImageEdit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +146,32 @@
 			name = main;
 			sourceTree = "<group>";
 		};
+		4E2677451E277A650039CEFC /* KKEmoticonTool */ = {
+			isa = PBXGroup;
+			children = (
+				4E2677461E277B520039CEFC /* KKEmoticonTool.h */,
+				4E2677471E277B520039CEFC /* KKEmoticonTool.m */,
+				4E26774A1E27A4940039CEFC /* KKEmoticonView.h */,
+				4E26774B1E27A4940039CEFC /* KKEmoticonView.m */,
+			);
+			name = KKEmoticonTool;
+			sourceTree = "<group>";
+		};
+		4E2677791E2C75C30039CEFC /* KKCutTool */ = {
+			isa = PBXGroup;
+			children = (
+				4E26777A1E2C797D0039CEFC /* KKCutTool.h */,
+				4E26777B1E2C797D0039CEFC /* KKCutTool.m */,
+				4E2677811E2CB0110039CEFC /* KKCutGridView.h */,
+				4E2677821E2CB0110039CEFC /* KKCutGridView.m */,
+				4E2677841E2CBCDD0039CEFC /* KKCutCircle.h */,
+				4E26778A1E2CC1F10039CEFC /* KKCutCircle.m */,
+				4E2677871E2CBFC30039CEFC /* KKCutGridLayer.h */,
+				4E2677881E2CBFC30039CEFC /* KKCutGridLayer.m */,
+			);
+			name = KKCutTool;
+			sourceTree = "<group>";
+		};
 		4E7B7AA41E12766A00143975 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +217,9 @@
 		4E7B7ACC1E14F82D00143975 /* ImageTools */ = {
 			isa = PBXGroup;
 			children = (
+				4E7B9A231E2E202B00DA741A /* KKTextTool */,
+				4E2677791E2C75C30039CEFC /* KKCutTool */,
+				4E2677451E277A650039CEFC /* KKEmoticonTool */,
 				4E2677201E24E5900039CEFC /* KKDrawTool */,
 				4E26771F1E24E55C0039CEFC /* KKMasaicTool */,
 			);
@@ -190,8 +246,21 @@
 				4E26773C1E263F5F0039CEFC /* KKClassList.m */,
 				4E26772E1E24ECED0039CEFC /* UIView+Frame.h */,
 				4E26772F1E24ECED0039CEFC /* UIView+Frame.m */,
+				4E2677501E28CDA70039CEFC /* KKScaleButton.h */,
+				4E2677511E28CDA70039CEFC /* KKScaleButton.m */,
 			);
 			name = ImageUtils;
+			sourceTree = "<group>";
+		};
+		4E7B9A231E2E202B00DA741A /* KKTextTool */ = {
+			isa = PBXGroup;
+			children = (
+				4E7B9AD81E2F4DC700DA741A /* KKTextTool.h */,
+				4E7B9AD91E2F4DC700DA741A /* KKTextTool.m */,
+				4E7B9ADB1E2F5ABD00DA741A /* KKTextView.h */,
+				4E7B9ADC1E2F5ABD00DA741A /* KKTextView.m */,
+			);
+			name = KKTextTool;
 			sourceTree = "<group>";
 		};
 		4EAA3BF11E1B3F5A007D9FC5 /* ImageBase */ = {
@@ -341,17 +410,26 @@
 			files = (
 				4E2677301E24ECED0039CEFC /* UIView+Frame.m in Sources */,
 				4E2677331E25D78B0039CEFC /* KKDrawTool.m in Sources */,
+				4E2677891E2CBFC30039CEFC /* KKCutGridLayer.m in Sources */,
 				4E26773A1E263A650039CEFC /* KKMasaicTool.m in Sources */,
 				4E7B7AB81E12766A00143975 /* ViewController.m in Sources */,
+				4E2677481E277B520039CEFC /* KKEmoticonTool.m in Sources */,
 				4EAA3BFA1E1BA7A9007D9FC5 /* KKImageToolInfo.m in Sources */,
 				4E26773D1E263F5F0039CEFC /* KKClassList.m in Sources */,
+				4E7B9ADA1E2F4DC700DA741A /* KKTextTool.m in Sources */,
 				4E2677371E263A3E0039CEFC /* KKMasaicView.m in Sources */,
 				4E26772C1E24ECDD0039CEFC /* KKToolBarItem.m in Sources */,
 				4E7B7AB51E12766A00143975 /* AppDelegate.m in Sources */,
+				4E26774C1E27A4940039CEFC /* KKEmoticonView.m in Sources */,
 				4E7B7AB21E12766A00143975 /* main.m in Sources */,
+				4E7B9ADD1E2F5ABD00DA741A /* KKTextView.m in Sources */,
+				4E26777C1E2C797D0039CEFC /* KKCutTool.m in Sources */,
 				4E26772D1E24ECDD0039CEFC /* UINavigationBar+BackgroundColor.m in Sources */,
 				4E26771D1E24D3160039CEFC /* KKImageEditorTheme.m in Sources */,
+				4E2677521E28CDA70039CEFC /* KKScaleButton.m in Sources */,
+				4E2677831E2CB0110039CEFC /* KKCutGridView.m in Sources */,
 				4E26772B1E24ECDD0039CEFC /* KKImageToolBase.m in Sources */,
+				4E26778B1E2CC1F10039CEFC /* KKCutCircle.m in Sources */,
 				4E7B7AD41E15058200143975 /* KKImageEditorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

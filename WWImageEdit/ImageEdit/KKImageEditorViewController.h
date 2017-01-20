@@ -9,12 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "KKImageToolInfo.h"
 
+static NSString* const KTextEditDoneNotification = @"KTextEditDoneNotification";
+
 @protocol KKImageEditorDelegate <NSObject>
 @optional
 - (void)imageDidFinishEdittingWithImage:(UIImage*)image;
 
 @end
-
 
 
 @interface KKImageEditorViewController : UIViewController<UIScrollViewDelegate>{
@@ -28,7 +29,7 @@
 @property (nonatomic, strong)  UIView *menuView;        //底部工具
 @property (nonatomic,weak) id<KKImageEditorDelegate> delegate;
 
-- (id)initWithImage:(UIImage*)image delegate:(id<KKImageEditorDelegate>)delegate;
+- (instancetype)initWithImage:(UIImage*)image delegate:(id<KKImageEditorDelegate>)delegate;
 
 
 

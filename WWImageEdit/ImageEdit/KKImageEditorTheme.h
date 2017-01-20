@@ -19,6 +19,6 @@
 @property (nonatomic, strong) UIFont   *toolbarTextFont;
 @property (nonatomic, assign) UIStatusBarStyle statusBarStyle;
 
-+ (KKImageEditorTheme*)theme;
++ (instancetype)theme;
 
 @end

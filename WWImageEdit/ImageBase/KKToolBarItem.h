@@ -19,6 +19,6 @@
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) KKImageToolInfo *imgToolInfo;
 
-- (id)initWithFrame:(CGRect)frame target:(id)target action:(SEL)action toolInfo:(KKImageToolInfo*)toolInfo;
+- (instancetype)initWithFrame:(CGRect)frame target:(id)target action:(SEL)action toolInfo:(KKImageToolInfo*)toolInfo;
 
 @end

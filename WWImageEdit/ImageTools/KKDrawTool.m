@@ -10,16 +10,16 @@
 
 @implementation KKDrawTool{
 
-    UIImageView *_drawingView;
-    CGSize _originalImageSize;
+    UIImageView *_drawingView; //画线view
+    CGSize _originalImageSize; //初始大小
+    CGPoint _prevDraggingPosition; //拖动的起点
+    UIView *_menuView; //菜单栏
     
-    CGPoint _prevDraggingPosition;
-    UIView *_menuView;
     UISlider *_colorSlider;
     UISlider *_widthSlider;
     UIView *_strokePreview;
     UIView *_strokePreviewBackground;
-    UIImageView *_eraserIcon;
+    UIImageView *_eraserIcon; //橡皮擦
 }
 
 #pragma -mark KKImageToolProtocol
@@ -32,7 +32,7 @@
 }
 
 + (NSUInteger)orderNum{
-    return 0;
+    return KKToolIndexNumberFirst;
 }
 
 #pragma mark- implementation
@@ -271,6 +271,7 @@
     }
 }
 
+//监听手指移动
 - (void)drawingViewDidPan:(UIPanGestureRecognizer*)sender
 {
     CGPoint currentDraggingPosition = [sender locationInView:_drawingView];
@@ -285,11 +286,12 @@
     _prevDraggingPosition = currentDraggingPosition;
 }
 
+//画线
 -(void)drawLine:(CGPoint)from to:(CGPoint)to
 {
     CGSize size = _drawingView.frame.size;
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
     
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     [_drawingView.image drawAtPoint:CGPointZero];
@@ -314,6 +316,7 @@
     UIGraphicsEndImageContext();
 }
 
+//生成修改后的图片
 - (UIImage*)buildImage
 {
     UIGraphicsBeginImageContextWithOptions(_originalImageSize, NO, self.editor.imageView.image.scale);

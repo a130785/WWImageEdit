@@ -24,7 +24,7 @@
     
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
@@ -33,7 +33,7 @@
     return self;
 }
 
-- (id)init
+- (instancetype)init
 {
     self = [self initWithNibName:nil bundle:nil];
     if (self){
@@ -43,7 +43,7 @@
 }
 
 
-- (id)initWithImage:(UIImage*)image delegate:(id<KKImageEditorDelegate>)delegate{
+- (instancetype)initWithImage:(UIImage*)image delegate:(id<KKImageEditorDelegate>)delegate{
     self = [self init];
     if (self){
         _originalImage = [image copy];
@@ -85,12 +85,12 @@
 {
     [super viewWillAppear:animated];
     [self refreshImageView];
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateNavigationItem) name:KTextEditDoneNotification object:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)dealloc{
@@ -119,16 +119,7 @@
         imageScroll.delegate = self;
         imageScroll.clipsToBounds = NO;
         
-        CGFloat y = 0;
-//        if(self.navigationController){
-//            if(self.navigationController.navigationBar.translucent){
-//                y = self.navigationController.navigationBar.bottom;
-//            }
-//        }
-//        else{
-//            y = _navigationBar.bottom;
-//        }
-         y = self.navigationController.navigationBar.bottom;
+        CGFloat y = self.navigationController.navigationBar.bottom;
         imageScroll.top = y;
         imageScroll.height = self.view.height - imageScroll.top - _menuView.height;
         
@@ -339,16 +330,20 @@
 
     
     if(self.currentTool){
-        UINavigationItem *item  = self.navigationItem;
-        item.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"OK" style:UIBarButtonItemStyleDone target:self action:@selector(pushedDoneBtn:)];
-        item.leftBarButtonItem  = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(pushedCancelBtn:)];
-        self.navigationItem.hidesBackButton = YES;
+        [self updateNavigationItem];
     }else{
         self.navigationItem.hidesBackButton = NO;
         [self initNavigationBar];
         self.navigationItem.leftBarButtonItem = nil;
     }
 
+}
+
+- (void)updateNavigationItem{
+    UINavigationItem *item  = self.navigationItem;
+    item.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"OK" style:UIBarButtonItemStyleDone target:self action:@selector(pushedDoneBtn:)];
+    item.leftBarButtonItem  = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(pushedCancelBtn:)];
+    self.navigationItem.hidesBackButton = YES;
 }
 
 #pragma mark- ScrollView delegate
