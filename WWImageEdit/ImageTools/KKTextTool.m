@@ -93,7 +93,7 @@
     });
 }
 
-#pragma -mark click Action
+#pragma mark- click Action
 - (void)addNewText
 {
     self.selectedTextView = nil;
@@ -115,15 +115,16 @@
     [_textEditView resignFirstResponder];
     [self setNavigationItem:NO];
     
+    
+    
     //修改还是添加
     if (self.selectedTextView) {
         
-        if ([_textEditView.text isEqualToString:@""]) {
-            
-        }
-        
         [_selectedTextView setLableText:_textEditView.text];
     }else{
+        if ([_textEditView.text isEqualToString:@""]) {
+            return;
+        }
         KKTextView *view = [[KKTextView alloc] initWithTool:self];
         view.center = CGPointMake(_workingView.width/2, _workingView.height/2);
         [view setLableText:_textEditView.text];
@@ -197,29 +198,29 @@
     }
 }
 
+//文字编辑view
 - (void)showTextEditView:(NSString *)text{
     if (!_textEditView) {
         _textEditView = [[UITextView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width,800)];
         UIColor *textViewBgColor = [UIColor blackColor];
         _textEditView.backgroundColor = [textViewBgColor colorWithAlphaComponent:0.85];
         [_textEditView setTextColor:[UIColor whiteColor]];
-        [_textEditView setFont:[UIFont systemFontOfSize:20]];
+        [_textEditView setFont:[UIFont systemFontOfSize:30]];
         [_textEditView setReturnKeyType:UIReturnKeyDone];
         
         _textEditView.delegate = self;
     }
     [_textEditView setText:text];
-    [_textEditView becomeFirstResponder];
     [self.editor.view addSubview:_textEditView];
     _textEditView.transform = CGAffineTransformMakeTranslation(0, 600);
     [UIView animateWithDuration:kImageToolAnimationDuration
                      animations:^{
                          _textEditView.transform = CGAffineTransformIdentity;
                      }];
-    
+    [_textEditView becomeFirstResponder];
 }
 
-#pragma -mark UITextViewDelegate
+#pragma mark- UITextViewDelegate
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
 {
     if ([text isEqualToString:@"\n"]) {

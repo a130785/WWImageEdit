@@ -33,6 +33,7 @@
 		4E7B9ADA1E2F4DC700DA741A /* KKTextTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7B9AD91E2F4DC700DA741A /* KKTextTool.m */; };
 		4E7B9ADD1E2F5ABD00DA741A /* KKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7B9ADC1E2F5ABD00DA741A /* KKTextView.m */; };
 		4EAA3BFA1E1BA7A9007D9FC5 /* KKImageToolInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAA3BF91E1BA7A9007D9FC5 /* KKImageToolInfo.m */; };
+		4ED38EAC1E46D36700E1A902 /* KKTextLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED38EAB1E46D36700E1A902 /* KKTextLable.m */; };
 		C4F4672BAB022CC86DB73F51 /* libPods-WWImageEdit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F6A44A6BABA928BBDB01D1 /* libPods-WWImageEdit.a */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,8 @@
 		4EAA3BF81E1BA7A9007D9FC5 /* KKImageToolInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKImageToolInfo.h; path = ImageEdit/KKImageToolInfo.h; sourceTree = "<group>"; };
 		4EAA3BF91E1BA7A9007D9FC5 /* KKImageToolInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKImageToolInfo.m; path = ImageEdit/KKImageToolInfo.m; sourceTree = "<group>"; };
 		4EB582ADCC57A8E58C41331D /* Pods-WWImageEdit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWImageEdit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WWImageEdit/Pods-WWImageEdit.debug.xcconfig"; sourceTree = "<group>"; };
+		4ED38EAA1E46D36700E1A902 /* KKTextLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKTextLable.h; path = ImageTools/KKTextLable.h; sourceTree = "<group>"; };
+		4ED38EAB1E46D36700E1A902 /* KKTextLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKTextLable.m; path = ImageTools/KKTextLable.m; sourceTree = "<group>"; };
 		D3C2F8281A3D27F9A918154B /* Pods-WWImageEdit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWImageEdit.release.xcconfig"; path = "Pods/Target Support Files/Pods-WWImageEdit/Pods-WWImageEdit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -259,6 +262,8 @@
 				4E7B9AD91E2F4DC700DA741A /* KKTextTool.m */,
 				4E7B9ADB1E2F5ABD00DA741A /* KKTextView.h */,
 				4E7B9ADC1E2F5ABD00DA741A /* KKTextView.m */,
+				4ED38EAA1E46D36700E1A902 /* KKTextLable.h */,
+				4ED38EAB1E46D36700E1A902 /* KKTextLable.m */,
 			);
 			name = KKTextTool;
 			sourceTree = "<group>";
@@ -411,6 +416,7 @@
 				4E2677301E24ECED0039CEFC /* UIView+Frame.m in Sources */,
 				4E2677331E25D78B0039CEFC /* KKDrawTool.m in Sources */,
 				4E2677891E2CBFC30039CEFC /* KKCutGridLayer.m in Sources */,
+				4ED38EAC1E46D36700E1A902 /* KKTextLable.m in Sources */,
 				4E26773A1E263A650039CEFC /* KKMasaicTool.m in Sources */,
 				4E7B7AB81E12766A00143975 /* ViewController.m in Sources */,
 				4E2677481E277B520039CEFC /* KKEmoticonTool.m in Sources */,

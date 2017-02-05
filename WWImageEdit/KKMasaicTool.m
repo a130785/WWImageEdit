@@ -21,7 +21,7 @@
     return @"Masaic";
 }
 
-+ (UIImage*)defaultIconImage
++ (UIImage*)defaultIconImage 
 {
     return [UIImage imageNamed:@"ToolMasaic"];
 }
@@ -37,7 +37,8 @@
     //生成马赛克
     CIFilter *filter = [CIFilter filterWithName:@"CIPixellate"];
     [filter setValue:ciImage  forKey:kCIInputImageKey];
-    [filter setDefaults];
+    
+    [filter setValue:@(22) forKey:kCIInputScaleKey];
     CIImage *outImage = [filter valueForKey:kCIOutputImageKey];
     CIContext *context = [CIContext contextWithOptions:nil];
     CGImageRef cgImage = [context createCGImage:outImage fromRect:[outImage extent]];
