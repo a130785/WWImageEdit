@@ -15,9 +15,6 @@
 @property (nonatomic, strong) UIColor  *toolbarColor;    //工具栏颜色
 @property (nonatomic, strong) NSString *toolIconColor;   //工具icon的背景颜色
 @property (nonatomic, strong) UIColor  *toolbarTextColor;
-@property (nonatomic, strong) UIColor  *toolbarSelectedButtonColor;
-@property (nonatomic, strong) UIFont   *toolbarTextFont;
-@property (nonatomic, assign) UIStatusBarStyle statusBarStyle;
 
 + (instancetype)theme;
 

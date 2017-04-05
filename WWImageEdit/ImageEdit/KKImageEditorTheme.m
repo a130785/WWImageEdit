@@ -46,9 +46,6 @@ static KKImageEditorTheme *_sharedInstance = nil;
         self.toolbarColor                   = [[UIColor blackColor] colorWithAlphaComponent:0.7];;
         self.toolIconColor                  = @"black";
         self.toolbarTextColor               = [UIColor blackColor];
-        self.toolbarSelectedButtonColor     = [[UIColor cyanColor] colorWithAlphaComponent:0.2];
-        self.toolbarTextFont                = [UIFont systemFontOfSize:10];
-        self.statusBarStyle                 = UIStatusBarStyleDefault;
     }
     return self;
 }

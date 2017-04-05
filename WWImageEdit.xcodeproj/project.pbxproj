@@ -10,7 +10,6 @@
 		4E26771D1E24D3160039CEFC /* KKImageEditorTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E26771C1E24D3160039CEFC /* KKImageEditorTheme.m */; };
 		4E26772B1E24ECDD0039CEFC /* KKImageToolBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2677261E24ECDD0039CEFC /* KKImageToolBase.m */; };
 		4E26772C1E24ECDD0039CEFC /* KKToolBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2677281E24ECDD0039CEFC /* KKToolBarItem.m */; };
-		4E26772D1E24ECDD0039CEFC /* UINavigationBar+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E26772A1E24ECDD0039CEFC /* UINavigationBar+BackgroundColor.m */; };
 		4E2677301E24ECED0039CEFC /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E26772F1E24ECED0039CEFC /* UIView+Frame.m */; };
 		4E2677331E25D78B0039CEFC /* KKDrawTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2677321E25D78B0039CEFC /* KKDrawTool.m */; };
 		4E2677371E263A3E0039CEFC /* KKMasaicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2677361E263A3E0039CEFC /* KKMasaicView.m */; };
@@ -46,8 +45,6 @@
 		4E2677261E24ECDD0039CEFC /* KKImageToolBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKImageToolBase.m; path = ImageBase/KKImageToolBase.m; sourceTree = "<group>"; };
 		4E2677271E24ECDD0039CEFC /* KKToolBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKToolBarItem.h; path = ImageBase/KKToolBarItem.h; sourceTree = "<group>"; };
 		4E2677281E24ECDD0039CEFC /* KKToolBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKToolBarItem.m; path = ImageBase/KKToolBarItem.m; sourceTree = "<group>"; };
-		4E2677291E24ECDD0039CEFC /* UINavigationBar+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+BackgroundColor.h"; path = "ImageBase/UINavigationBar+BackgroundColor.h"; sourceTree = "<group>"; };
-		4E26772A1E24ECDD0039CEFC /* UINavigationBar+BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+BackgroundColor.m"; path = "ImageBase/UINavigationBar+BackgroundColor.m"; sourceTree = "<group>"; };
 		4E26772E1E24ECED0039CEFC /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "ImageUtils/UIView+Frame.h"; sourceTree = "<group>"; };
 		4E26772F1E24ECED0039CEFC /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "ImageUtils/UIView+Frame.m"; sourceTree = "<group>"; };
 		4E2677311E25D78B0039CEFC /* KKDrawTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKDrawTool.h; path = ImageTools/KKDrawTool.h; sourceTree = "<group>"; };
@@ -275,8 +272,6 @@
 				4E2677261E24ECDD0039CEFC /* KKImageToolBase.m */,
 				4E2677271E24ECDD0039CEFC /* KKToolBarItem.h */,
 				4E2677281E24ECDD0039CEFC /* KKToolBarItem.m */,
-				4E2677291E24ECDD0039CEFC /* UINavigationBar+BackgroundColor.h */,
-				4E26772A1E24ECDD0039CEFC /* UINavigationBar+BackgroundColor.m */,
 				4E2677211E24E70A0039CEFC /* KKImageToolProtocol.h */,
 			);
 			name = ImageBase;
@@ -430,7 +425,6 @@
 				4E7B7AB21E12766A00143975 /* main.m in Sources */,
 				4E7B9ADD1E2F5ABD00DA741A /* KKTextView.m in Sources */,
 				4E26777C1E2C797D0039CEFC /* KKCutTool.m in Sources */,
-				4E26772D1E24ECDD0039CEFC /* UINavigationBar+BackgroundColor.m in Sources */,
 				4E26771D1E24D3160039CEFC /* KKImageEditorTheme.m in Sources */,
 				4E2677521E28CDA70039CEFC /* KKScaleButton.m in Sources */,
 				4E2677831E2CB0110039CEFC /* KKCutGridView.m in Sources */,

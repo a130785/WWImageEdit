@@ -71,8 +71,6 @@
     [self initToolSettings];
     [self initNavigationBar];
     
-//    [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor colorWithWhite:1 alpha:1]];
-    
     if(_imageView==nil){
         _imageView = [UIImageView new];
         [_scrollView addSubview:_imageView];
@@ -138,7 +136,6 @@
     //基类不算 -1
     NSUInteger toolCount = self.toolInfo.subtools.count - 1;
     CGFloat padding = 0;
-    
     
     CGFloat diff = _menuView.frame.size.width - toolCount * W;
     if (0<diff) {

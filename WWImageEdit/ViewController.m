@@ -36,8 +36,6 @@
         
         [self presentViewController:picker animated:YES completion:nil];
     }
-    
-    
 }
 
 #pragma mark- ImagePicker delegate
