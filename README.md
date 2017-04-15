@@ -56,3 +56,5 @@ imageEditorViewController实现UIScrollViewDelegate，因为图片裁剪后需�
 源代码我会在下一篇【写一个iOS图片编辑器(二)】给出：在图片上添加icon，并拖动
 
 ![WechatIMG4.jpeg](http://upload-images.jianshu.io/upload_images/1968278-23c12ee196663276.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+简书地址：[wu大维的简书](http://www.jianshu.com/u/394efeb0517b)
