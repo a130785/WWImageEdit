@@ -18,7 +18,7 @@
 
 + (NSString*)defaultTitle
 {
-    return @"Masaic";
+    return @"Mosaic";
 }
 
 + (UIImage*)defaultIconImage 
