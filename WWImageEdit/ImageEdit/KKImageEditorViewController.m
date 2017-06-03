@@ -324,8 +324,6 @@
                          }
                      }
      ];
-
-    
     if(self.currentTool){
         [self updateNavigationItem];
     }else{

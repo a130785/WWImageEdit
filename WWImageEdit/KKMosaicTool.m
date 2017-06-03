@@ -6,12 +6,12 @@
 //  Copyright © 2017年 kook. All rights reserved.
 //
 
-#import "KKMasaicTool.h"
-#import "KKMasaicView.h"
+#import "KKMosaicTool.h"
+#import "KKMosaicView.h"
 
-@implementation KKMasaicTool{
+@implementation KKMosaicTool{
 
-    KKMasaicView *masaicView; //显示马赛克
+    KKMosaicView *mosaicView; //显示马赛克
     UIView *_menuView; //底部菜单
 }
 
@@ -37,20 +37,21 @@
     //生成马赛克
     CIFilter *filter = [CIFilter filterWithName:@"CIPixellate"];
     [filter setValue:ciImage  forKey:kCIInputImageKey];
-    
-    [filter setValue:@(22) forKey:kCIInputScaleKey];
+    //马赛克像素大小
+    [filter setValue:@(50) forKey:kCIInputScaleKey];
     CIImage *outImage = [filter valueForKey:kCIOutputImageKey];
+    
     CIContext *context = [CIContext contextWithOptions:nil];
     CGImageRef cgImage = [context createCGImage:outImage fromRect:[outImage extent]];
     UIImage *showImage = [UIImage imageWithCGImage:cgImage];
     CGImageRelease(cgImage);
     
-    masaicView = [[KKMasaicView alloc]initWithFrame:self.editor.imageView.bounds];
+    mosaicView = [[KKMosaicView alloc]initWithFrame:self.editor.imageView.bounds];
     
-    masaicView.surfaceImage = self.editor.imageView.image;
-    masaicView.image = showImage;
+    mosaicView.surfaceImage = self.editor.imageView.image;
+    mosaicView.image = showImage;
     
-    [self.editor.imageView addSubview:masaicView];
+    [self.editor.imageView addSubview:mosaicView];
     
     self.editor.imageView.userInteractionEnabled = YES;
     self.editor.scrollView.panGestureRecognizer.minimumNumberOfTouches = 2;
@@ -73,7 +74,7 @@
 
 - (void)cleanup
 {
-    [masaicView removeFromSuperview];
+    [mosaicView removeFromSuperview];
     self.editor.imageView.userInteractionEnabled = NO;
     self.editor.scrollView.panGestureRecognizer.minimumNumberOfTouches = 1;
     
@@ -114,12 +115,9 @@
 
 - (UIImage*)buildImage
 {
-    UIGraphicsBeginImageContextWithOptions(masaicView.bounds.size, NO, 0);
-    
-    [masaicView.layer renderInContext:UIGraphicsGetCurrentContext()];
-    
+    UIGraphicsBeginImageContextWithOptions(mosaicView.bounds.size, NO, 0);
+    [mosaicView.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    
     UIGraphicsEndImageContext();
     
     

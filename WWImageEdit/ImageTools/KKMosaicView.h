@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KKMasaicView : UIView
+@interface KKMosaicView : UIView
 //马赛克图片
 @property (nonatomic, strong) UIImage *image;
 

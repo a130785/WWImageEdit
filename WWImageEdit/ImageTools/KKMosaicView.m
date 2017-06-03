@@ -6,9 +6,9 @@
 //  Copyright © 2017年 kook. All rights reserved.
 //
 
-#import "KKMasaicView.h"
+#import "KKMosaicView.h"
 
-@interface KKMasaicView ()
+@interface KKMosaicView ()
 
 @property (nonatomic, strong) UIImageView *surfaceImageView;
 
@@ -21,7 +21,7 @@
 @end
 
 
-@implementation KKMasaicView
+@implementation KKMosaicView
 
 - (void)dealloc
 {
@@ -46,6 +46,7 @@
         self.shapeLayer.frame = self.bounds;
         self.shapeLayer.lineCap = kCALineCapRound;
         self.shapeLayer.lineJoin = kCALineJoinRound;
+    //手指移动时 画笔的宽度
         self.shapeLayer.lineWidth = 20.f;
         self.shapeLayer.strokeColor = [UIColor blueColor].CGColor;
         self.shapeLayer.fillColor = nil;
@@ -78,6 +79,11 @@
     CGPoint point = [touch locationInView:self];
     CGPathAddLineToPoint(self.path, NULL, point.x, point.y);
     CGMutablePathRef path = CGPathCreateMutableCopy(self.path);
+    //
+    CGContextRef currentContext = UIGraphicsGetCurrentContext();
+    CGContextAddPath(currentContext, path);
+    [[UIColor blueColor] setStroke];
+    CGContextDrawPath(currentContext, kCGPathStroke);
     self.shapeLayer.path = path;
     CGPathRelease(path);
     

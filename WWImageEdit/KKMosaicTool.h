@@ -8,6 +8,6 @@
 
 #import "KKImageToolBase.h"
 
-@interface KKMasaicTool : KKImageToolBase
+@interface KKMosaicTool : KKImageToolBase
 
 @end
