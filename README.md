@@ -28,7 +28,7 @@ Usage:
 
 ![WechatIMG10.jpeg](http://upload-images.jianshu.io/upload_images/1968278-fb97ec49d6f3aed7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-马赛克处理为例：在编辑页面上盖里一个masaicView,masaicView分为上下2层，下面一层为加了CIPixellate滤镜的图层，上面一层为原始图片。虽然手指的移动，移动的路径变透明就显示出底层的马赛克效果。用户操作时感觉就像随手机移动而变成马赛克。最后截屏保存。
+马赛克处理为例：在编辑页面上盖里一个mosaicView,mosaicView分为上下2层，下面一层为加了CIPixellate滤镜的图层，上面一层为原始图片。虽然手指的移动，移动的路径变透明就显示出底层的马赛克效果。用户操作时感觉就像随手机移动而变成马赛克。最后截屏保存。
 
 ####UML 架构图
 
