@@ -89,13 +89,11 @@
 
 - (void)executeWithCompletionBlock:(void (^)(UIImage *, NSError *, NSDictionary *))completionBlock
 {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        UIImage *image = [self buildImage];
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            completionBlock(image, nil, nil);
-        });
-    });
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//
+//        });
+    UIImage *image = [self buildImage];
+    completionBlock(image, nil, nil);
 }
 
 - (void)setMenu{
@@ -119,8 +117,6 @@
     [mosaicView.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    
-    
     return image;
 }
 @end

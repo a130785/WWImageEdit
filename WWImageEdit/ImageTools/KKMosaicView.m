@@ -80,7 +80,9 @@
     CGPathAddLineToPoint(self.path, NULL, point.x, point.y);
     CGMutablePathRef path = CGPathCreateMutableCopy(self.path);
     //
+    UIGraphicsBeginImageContextWithOptions(self.frame.size, YES, 0);
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
+    
     CGContextAddPath(currentContext, path);
     [[UIColor blueColor] setStroke];
     CGContextDrawPath(currentContext, kCGPathStroke);
