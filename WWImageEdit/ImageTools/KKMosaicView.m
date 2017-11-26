@@ -81,9 +81,12 @@
     CGPoint point = [touch locationInView:self];
     CGPathAddLineToPoint(self.path, NULL, point.x, point.y);
     CGMutablePathRef path = CGPathCreateMutableCopy(self.path);
+    //
 
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
-    
+    if (!currentContext) {
+        UIGraphicsBeginImageContextWithOptions(self.frame.size, YES, 0);
+    }
     CGContextAddPath(currentContext, path);
     [[UIColor blueColor] setStroke];
     CGContextDrawPath(currentContext, kCGPathStroke);
