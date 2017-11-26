@@ -86,13 +86,14 @@
 
 - (void)executeWithCompletionBlock:(void (^)(UIImage *, NSError *, NSDictionary *))completionBlock
 {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        UIImage *image = [self buildImage];
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    
         
         dispatch_async(dispatch_get_main_queue(), ^{
+            UIImage *image = [self buildImage];
             completionBlock(image, nil, nil);
         });
-    });
+//    });
 }
 
 #pragma mark- other

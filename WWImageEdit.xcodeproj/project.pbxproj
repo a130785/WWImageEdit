@@ -319,6 +319,7 @@
 				TargetAttributes = {
 					4E7B7AAC1E12766A00143975 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7N6K3G2LDT;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -562,11 +563,11 @@
 			baseConfigurationReference = 4EB582ADCC57A8E58C41331D /* Pods-WWImageEdit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7N6K3G2LDT;
 				INFOPLIST_FILE = WWImageEdit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kook.WWImageEdit;
+				PRODUCT_BUNDLE_IDENTIFIER = kook.WWImageEdit.wuwei;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -576,11 +577,11 @@
 			baseConfigurationReference = D3C2F8281A3D27F9A918154B /* Pods-WWImageEdit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7N6K3G2LDT;
 				INFOPLIST_FILE = WWImageEdit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kook.WWImageEdit;
+				PRODUCT_BUNDLE_IDENTIFIER = kook.WWImageEdit.wuwei;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

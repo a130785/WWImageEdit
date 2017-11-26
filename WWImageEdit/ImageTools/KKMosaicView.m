@@ -30,7 +30,7 @@
     }
 }
 
--(instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -54,7 +54,9 @@
         [self.layer addSublayer:self.shapeLayer];
         self.imageLayer.mask = self.shapeLayer;
         
-        self.path = CGPathCreateMutable();
+        CGMutablePathRef pathRef = CGPathCreateMutable();
+        self.path = CGPathCreateMutableCopy(pathRef);
+        CGPathRelease(pathRef);
     }
     
     return self;
@@ -79,8 +81,7 @@
     CGPoint point = [touch locationInView:self];
     CGPathAddLineToPoint(self.path, NULL, point.x, point.y);
     CGMutablePathRef path = CGPathCreateMutableCopy(self.path);
-    //
-    UIGraphicsBeginImageContextWithOptions(self.frame.size, YES, 0);
+
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
     
     CGContextAddPath(currentContext, path);

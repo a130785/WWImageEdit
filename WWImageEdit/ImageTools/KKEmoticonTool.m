@@ -76,13 +76,10 @@
 - (void)executeWithCompletionBlock:(void (^)(UIImage *, NSError *, NSDictionary *))completionBlock
 {
     [KKEmoticonView setActiveEmoticonView:nil];
-    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        UIImage *image = [self buildImage:_originalImage];
         
-        dispatch_async(dispatch_get_main_queue(), ^{
-            completionBlock(image, nil, nil);
-        });
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIImage *image = [self buildImage:_originalImage];
+        completionBlock(image, nil, nil);
     });
 }
 
