@@ -1,7 +1,7 @@
 # WWImageEdit
 
 ### pod 
-pod ‘WWImageEdit’
++ pod ‘WWImageEdit’
 
 
 基本的图像编辑功能,画笔，马赛克，裁剪，添加文字表情
