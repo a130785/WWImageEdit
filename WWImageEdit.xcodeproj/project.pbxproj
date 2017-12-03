@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E05B7621FD3D07F004A61C4 /* KKMosaicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E05B7611FD3D07F004A61C4 /* KKMosaicTool.m */; };
 		4E26771D1E24D3160039CEFC /* KKImageEditorTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E26771C1E24D3160039CEFC /* KKImageEditorTheme.m */; };
 		4E26772B1E24ECDD0039CEFC /* KKImageToolBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2677261E24ECDD0039CEFC /* KKImageToolBase.m */; };
 		4E26772C1E24ECDD0039CEFC /* KKToolBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2677281E24ECDD0039CEFC /* KKToolBarItem.m */; };
 		4E2677301E24ECED0039CEFC /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E26772F1E24ECED0039CEFC /* UIView+Frame.m */; };
 		4E2677331E25D78B0039CEFC /* KKDrawTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2677321E25D78B0039CEFC /* KKDrawTool.m */; };
 		4E2677371E263A3E0039CEFC /* KKMosaicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2677361E263A3E0039CEFC /* KKMosaicView.m */; };
-		4E26773A1E263A650039CEFC /* KKMosaicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2677391E263A650039CEFC /* KKMosaicTool.m */; };
 		4E26773D1E263F5F0039CEFC /* KKClassList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E26773C1E263F5F0039CEFC /* KKClassList.m */; };
 		4E2677481E277B520039CEFC /* KKEmoticonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2677471E277B520039CEFC /* KKEmoticonTool.m */; };
 		4E26774C1E27A4940039CEFC /* KKEmoticonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E26774B1E27A4940039CEFC /* KKEmoticonView.m */; };
@@ -38,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		09F6A44A6BABA928BBDB01D1 /* libPods-WWImageEdit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WWImageEdit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E05B7601FD3D07F004A61C4 /* KKMosaicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKMosaicTool.h; path = ImageTools/KKMosaicTool.h; sourceTree = "<group>"; };
+		4E05B7611FD3D07F004A61C4 /* KKMosaicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKMosaicTool.m; path = ImageTools/KKMosaicTool.m; sourceTree = "<group>"; };
 		4E26771B1E24D3160039CEFC /* KKImageEditorTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKImageEditorTheme.h; path = ImageEdit/KKImageEditorTheme.h; sourceTree = "<group>"; };
 		4E26771C1E24D3160039CEFC /* KKImageEditorTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKImageEditorTheme.m; path = ImageEdit/KKImageEditorTheme.m; sourceTree = "<group>"; };
 		4E2677211E24E70A0039CEFC /* KKImageToolProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKImageToolProtocol.h; path = ImageBase/KKImageToolProtocol.h; sourceTree = "<group>"; };
@@ -51,8 +53,6 @@
 		4E2677321E25D78B0039CEFC /* KKDrawTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKDrawTool.m; path = ImageTools/KKDrawTool.m; sourceTree = "<group>"; };
 		4E2677351E263A3E0039CEFC /* KKMosaicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKMosaicView.h; path = ImageTools/KKMosaicView.h; sourceTree = "<group>"; };
 		4E2677361E263A3E0039CEFC /* KKMosaicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKMosaicView.m; path = ImageTools/KKMosaicView.m; sourceTree = "<group>"; };
-		4E2677381E263A650039CEFC /* KKMosaicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMosaicTool.h; sourceTree = "<group>"; };
-		4E2677391E263A650039CEFC /* KKMosaicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKMosaicTool.m; sourceTree = "<group>"; };
 		4E26773B1E263F5F0039CEFC /* KKClassList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKClassList.h; path = ImageUtils/KKClassList.h; sourceTree = "<group>"; };
 		4E26773C1E263F5F0039CEFC /* KKClassList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKClassList.m; path = ImageUtils/KKClassList.m; sourceTree = "<group>"; };
 		4E2677461E277B520039CEFC /* KKEmoticonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKEmoticonTool.h; path = ImageTools/KKEmoticonTool.h; sourceTree = "<group>"; };
@@ -117,8 +117,8 @@
 		4E26771F1E24E55C0039CEFC /* KKMosaicTool */ = {
 			isa = PBXGroup;
 			children = (
-				4E2677381E263A650039CEFC /* KKMosaicTool.h */,
-				4E2677391E263A650039CEFC /* KKMosaicTool.m */,
+				4E05B7601FD3D07F004A61C4 /* KKMosaicTool.h */,
+				4E05B7611FD3D07F004A61C4 /* KKMosaicTool.m */,
 				4E2677351E263A3E0039CEFC /* KKMosaicView.h */,
 				4E2677361E263A3E0039CEFC /* KKMosaicView.m */,
 			);
@@ -409,10 +409,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E2677301E24ECED0039CEFC /* UIView+Frame.m in Sources */,
+				4E05B7621FD3D07F004A61C4 /* KKMosaicTool.m in Sources */,
 				4E2677331E25D78B0039CEFC /* KKDrawTool.m in Sources */,
 				4E2677891E2CBFC30039CEFC /* KKCutGridLayer.m in Sources */,
 				4ED38EAC1E46D36700E1A902 /* KKTextLable.m in Sources */,
-				4E26773A1E263A650039CEFC /* KKMosaicTool.m in Sources */,
 				4E7B7AB81E12766A00143975 /* ViewController.m in Sources */,
 				4E2677481E277B520039CEFC /* KKEmoticonTool.m in Sources */,
 				4EAA3BFA1E1BA7A9007D9FC5 /* KKImageToolInfo.m in Sources */,
